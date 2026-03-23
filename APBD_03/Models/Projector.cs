@@ -2,7 +2,7 @@ using Rental.Equipment;
 
 namespace Rental.Models;
 
-public sealed class Projector : Equipment
+public class Projector : Equipment
 {
     public Projector(string name, string description, int voltage, int brightnessLumens)
         : base(name, description)

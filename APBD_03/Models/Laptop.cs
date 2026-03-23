@@ -2,7 +2,7 @@ using Rental.Equipment;
 
 namespace Rental.Models;
 
-public sealed class Laptop : Equipment
+public class Laptop : Equipment
 {
     public Laptop(string name, string description, string resolution, int ramGb)
         : base(name, description)

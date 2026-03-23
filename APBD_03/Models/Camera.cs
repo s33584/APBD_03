@@ -2,7 +2,7 @@ using Rental.Equipment;
 
 namespace Rental.Models;
 
-public sealed class Camera : Equipment
+public class Camera : Equipment
 {
     public Camera(string name, string description, decimal aperture, int focalLengthMm)
         : base(name, description)
