@@ -1,4 +1,4 @@
-namespace APBD_03.Domain;
+namespace APBD_03.Main;
 
 public enum EquipmentStatus
 {

@@ -1,4 +1,4 @@
-namespace APBD_03.Domain;
+namespace APBD_03.Main;
 
 public enum UserType
 {
@@ -6,7 +6,7 @@ public enum UserType
     Employee = 2
 }
 
-public sealed class User
+public class User
 {
     public User(string firstName, string lastName, UserType userType)
     {

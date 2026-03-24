@@ -1,5 +1,5 @@
 using APBD_03;
-using APBD_03.Domain;
+using APBD_03.Main;
 
 namespace APBD_03.Services;
 
@@ -14,7 +14,7 @@ public class RentalService
 
     public void AddUser(User user)
     {
-        user ?? throw ArgumentNullException("User should be non null.");
+        ArgumentNullException.ThrowIfNull(user, "User should not be null");
 
         if (repository.UserExists(user.Id))
         {
@@ -26,7 +26,7 @@ public class RentalService
 
     public void AddEquipment(Equipment equipment)
     {
-        equipment ?? throw ArgumentNullException("Equipment should be non null");
+        ArgumentNullException.ThrowIfNull(equipment, "Equipment should not be null");
 
         if (repository.EquipmentExists(equipment.Id))
         {

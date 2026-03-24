@@ -1,10 +1,10 @@
-using APBD_03.Domain;
+using APBD_03.Main;
 
 namespace APBD_03.Models;
 
 public class Camera : Equipment
 {
-    public Camera(string name, string description, decimal aperture, int focalLengthMm)
+    public Camera(string name, string description, float aperture, int focalLengthMm)
         : base(name, description)
     {
         if (aperture <= 0)
@@ -21,7 +21,7 @@ public class Camera : Equipment
         FocalLengthMm = focalLengthMm;
     }
 
-    public decimal Aperture { get; }
+    public float Aperture { get; }
 
     public int FocalLengthMm { get; }
 }
