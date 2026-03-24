@@ -120,7 +120,7 @@ public class RentalService
         {
             UserType.Student => 2,
             UserType.Employee => 5,
-            _ => throw new ArgumentOutOfRangeException(nameof(userType), userType, "This user type is not supported.")
+            _ => throw new ArgumentOutOfRangeException(userType, "Unsupported user type.")
         };
 }
 
