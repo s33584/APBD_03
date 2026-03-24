@@ -1,4 +1,4 @@
-namespace Rental.User;
+namespace APBD_03.Domain;
 
 public enum UserType
 {

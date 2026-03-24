@@ -1,9 +1,6 @@
-using Rental.Equipment;
-using Rental.User;
+namespace APBD_03.Domain;
 
-namespace Rental;
-
-public sealed class Rental
+public class Rental
 {
     private const float PenalryPerDay = 10.0f;
 

@@ -1,6 +1,6 @@
-using Rental.Equipment;
+using APBD_03.Domain;
 
-namespace Rental.Models;
+namespace APBD_03.Models;
 
 public class Projector : Equipment
 {

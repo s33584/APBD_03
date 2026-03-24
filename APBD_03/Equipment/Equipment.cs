@@ -1,4 +1,4 @@
-namespace Rental.Equipment;
+namespace APBD_03.Domain;
 
 public enum EquipmentStatus
 {
